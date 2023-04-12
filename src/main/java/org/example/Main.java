@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.dominio.Conteudo;
 import org.example.dominio.Curso;
 import org.example.dominio.Mentoria;
 
@@ -16,6 +17,12 @@ public class Main {
         mentoria.setTitulo("Mentoria de Java");
         mentoria.setDescricao("Descrição Curso Mentoria Java");
         mentoria.setData(LocalDate.now());
+
+        Conteudo conteudo = new Curso();
+        conteudo.setDescricao("Descrição conteúdo");
+        conteudo.setTitulo("Título conteúdo");
+
+        System.out.println(conteudo);
 
         System.out.println(curso);
         System.out.println(mentoria);
